@@ -1,0 +1,55 @@
+<!-- dashboard.html -->
+
+
+{% block content %}
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Admin Dashboard</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="content">
+    <!-- Add your content here -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card card-primary">
+            <div class="card-header">
+              <h3 class="card-title">Client Forms</h3>
+            </div>
+            <div class="card-body">
+              <!-- Add your client form data here -->
+              <!-- For simplicity, let's just display some sample data -->
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Company</th>
+                    <th>Services</th>
+                    <th>Comment</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>123-456-7890</td>
+                    <td>Example Corp</td>
+                    <td>Service A, Service B</td>
+                    <td>Some comments</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

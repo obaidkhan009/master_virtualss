@@ -1,0 +1,30 @@
+{% block content %}
+<h2>Client Forms</h2>
+{% for client in clients %}
+<p class="client-name" style="cursor: pointer">
+  <b>{{ client.first_name }} {{ client.last_name }}</b>
+</p>
+<div class="client-details">
+  <p>
+    Company: {{ client.company_name }} <br />
+    Email: {{ client.email }} <br />
+    Phone: {{ client.phone_number }} <br />
+    Services Needed: {{ client.services_needed }} <br />
+    Comment: {{ client.comment }} <br />
+    <!-- Add more client information here if needed -->
+  </p>
+</div>
+<hr />
+{% endfor %}
+<a href="{% url 'create_admin' %}" class="btn btn-primary">Create Admin</a>
+{% endblock %}
+
+<style>
+  .client-details {
+    display: none;
+  }
+
+  .client-details.show {
+    display: block;
+  }
+</style>
